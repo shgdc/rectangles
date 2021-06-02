@@ -3,9 +3,13 @@
 // siehe https://www.w3schools.com/cs/cs_properties.asp
 // diese ermöglichen es unter anderem dafür zu sorgen, dass den Objekt-Variablen keine unerwünschten Werte zugewiesen werden
 // Object Properties heißen genauso wie die entsprechenden Variablen, werden aber groß geschrieben
-// diese Objekteigenschaften sind wie eine Kombination aus einer Variable und drei festgelegten Zugriffsmethoden get, set und init
-// die Zugriffsmethoden können, müssen aber nicht definiert werden; durch Weglassen der get-Zugriffsmethode kann man z.B. Schreibzugriff verhindern
-// Aufgabe: 1) füge der Klasse zwei Eigenschaften EdgeA und EdgeB hinzu 2) definiere jeweils nur die get-Methode für diese Eigenschaften
+// diese Objekteigenschaften sind wie eine Kombination aus einer Variable und drei festgelegten Zugriffsmethoden
+// nämlich get, set und init
+// die Zugriffsmethoden können, müssen aber nicht definiert werden
+// durch Weglassen der get-Zugriffsmethode kann man z.B. Schreibzugriff verhindern
+// Aufgaben:
+// 1) füge der Klasse zwei Eigenschaften EdgeA und EdgeB hinzu
+// 2) definiere jeweils nur die get-Methode für diese Eigenschaften
 // 3) passe den Rest des Programms ensprechend an
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {

@@ -2,7 +2,8 @@
 // die Kanten werden nur noch einmal in der Klasse deklariert und nicht mehr für jedes Objekt
 // der Zugriff auf die Kanten mit z.B. r1.edgeA ist deutlich verschieden von r1_edgeA, obwohl er sehr ähnlich aussieht
 // bei r1.edgeA und r2.edgeA handelt es sich um den Zugriff auf zwei Variablen, die in unterschiedlichen Objekten existieren
-// bei r1_edgeA und r2_edgeA handelt es ich um den Zugriff auf zwei Variablen, die im gleichen Programmkontext existieren, hier dem Hauptprogramm
+// bei r1_edgeA und r2_edgeA handelt es ich um den Zugriff auf zwei Variablen, die im gleichen Programmkontext existieren
+// nämlich hier dem Hauptprogramm
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");

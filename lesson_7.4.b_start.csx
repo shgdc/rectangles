@@ -1,4 +1,5 @@
-// der letzte Schrit besteht darin, die Methoden zur Berechnung der Rechteckeigenschaften in die Klasse hineinzuziehen
+// add the three methods as private methods without parameters to Rectangle and change them to use the classes private variables
+// add three public properties for circumference, surface and isSquare and call the private methods added before
 
 float circumference (float a, float b) {
     return 2 * (a + b);
@@ -11,7 +12,6 @@ float surface (float a, float b) {
 bool isSquare (float a, float b) {
     return a == b;
 }
-
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");
     Console.WriteLine("The surface of rectangle " + name + " is " + surface + ".");
@@ -43,8 +43,9 @@ class Rectangle {
         edgeA = a;
         edgeB = b;
     }
-
 }
+
+
 
 Rectangle r1 = new Rectangle("R1", 12.5f,12.5f);
 Rectangle r2 = new Rectangle("R2", 12.5f, 9.25f);

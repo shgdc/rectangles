@@ -1,11 +1,11 @@
 // der letzte Schrit besteht darin, die Methoden zur Berechnung der Rechteckeigenschaften in die Klasse hineinzuziehen
 // da die Methoden dann Zugriff auf die privaten Variablen der Objekte haben, könnte man die Parameter entfernen
 // auf diese Weise könnte man die Methoden dann auf dem Objekt aufrufen, ohne das man Argumente angeben müsste
-// nennen wir das obige Vorgehen Ansatz 1
-// alternativ kann man für Methoden, die nur mit Daten des Objektes arbeiten auch weitere Eigenschaften definieren;
-// in den get-Methoden kann man dann die zuvor in das Objekt hineingezogenen Methoden aufrufen
-// bei diesem Ansatz 2 bietet es sich an, die Parameter der hineingezogenen Methoden beizubehalten, da es die Lesbarkeit verbessert
-// Aufgabe: setze für den Umfang Ansatz 1 um und für die anderen beiden Methoden Ansatz 2
+// nennen wir das obige Vorgehen Ansatz a
+// alternativ kann man für Berechnungen, die nur mit Daten des Objektes arbeiten auch weitere Eigenschaften definieren;
+// in den get-Methoden dieser Eigenschaften kann man dann die Berechnungen durchführen
+// und zwar entweder durch den Aufruf privater Methoden (Ansatz b) oder direkt (Ansatz c)
+// Aufgabe: setze die drei Ansätze in den entsprechend benannten Dateien um
 
 float circumference (float a, float b) {
     return 2 * (a + b);

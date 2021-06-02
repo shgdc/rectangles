@@ -1,8 +1,15 @@
 // bisher werden den öffentlichen Variablen der Objekte nach der Erstellung der Objekte von außen Werte zugewiesen
-// besser ist es diese Variablen mit dem Access Modifier "private" zu verbergen und ihre Werte mit Hilfe einer besonderen zusätzlichen Methode zu setzen
-// diese besondere Methode nennt man einen Konstruktur; im Gegensatz zu einer normalen Methode werden Konstruktoren ohne Typ für einen Rückgabewert definiert
-// Konstruktoren heißen genauso wie ihre Klasse; Konstruktoren können Parameter haben; eine Klasse kann mehrere Konstruktoren haben
-// Aufgabe: 1) verberge die Variablen der Klasse 2) erstelle einen Konstruktor, um die Variablen zu setzen 3) passe den Rest des Programms entsprechend an
+// besser ist es diese Variablen zu verbergen und ihre Werte mit Hilfe einer besonderen zusätzlichen Methode zu setzen
+// verbergen kann man Variablen mit dem Access Modifier "private"
+// die besondere Methode zum Setzen der Variablen nennt man einen Konstruktur
+// im Gegensatz zu einer normalen Methode werden Konstruktoren ohne Typ für einen Rückgabewert definiert
+// Konstruktoren heißen genauso wie ihre Klasse
+// Konstruktoren können Parameter haben; 
+// eine Klasse kann mehrere Konstruktoren haben
+// Aufgaben:
+//   1) verberge die Variablen der Klasse 
+//   2) erstelle einen Konstruktor, um die Variablen zu setzen
+//   3) passe den Rest des Programms entsprechend an
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");

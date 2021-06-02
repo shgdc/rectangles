@@ -1,12 +1,15 @@
-// the instructions for output for the two rectangles are identical except for the names of the variables
-// in such a case it is a good idea to put the instructions into a method and call the method with the desired variables
-// this has been done in lines 4-9 below
-// the method is called Output
-// the word void means that the method does not return a value
-// the parentheses after the method name contains variable declarations
-// as you can see within the method, the method can use these variables
-// also, as you can see in lines 45 and 46, a method can be used by writing its name followed by parentheses containing a list of values
-// these values are written into the method's variables
+// at the end of the script for lesson 5.2 there are four lines of output for each of the two rectangles
+// these two blocks differ only in the variables being used
+// in this script, one set of these four output lines have been moved into the method Output
+// it is important to understand the difference between the instructions outside and within methods
+// the instructions outside methods are executed one after the other from the top of the script to the bottom
+// the instructions within a method are not executed right away; instead they are executed whenever the method is called
+// in the method, the variables have been renamed to be general, i.e. edgeA and no longer e.g. r1_edgeA
+// for each variable to be used in method Output, a variable declaration is made in the round brackets after the name
+// these are called the parameters of the method
+// the method is then called two times at the end of the script
+// when calling the method, values are provided in the round brackets after the method name
+// these are called arguments
 
 void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
     Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");
