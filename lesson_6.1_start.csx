@@ -3,6 +3,13 @@
 // unten ist dies am Beispiel von Umfang geschehen; zur weiteren Vereinfachung wurden die Umfangsvariablen entfernt und bei der Ausgabe direkt die neue Umfangsmethode aufgerufen
 // Aufgabe: ändere den Code entsprechend für die anderen beiden berechneten Werte
 
+void Output(string name, float edgeA, float edgeB, float surface, float circumference, bool isSquare) {
+    Console.WriteLine("The two edges of rectangle " + name + " are " + edgeA + " and " + edgeB + ".");
+    Console.WriteLine("The surface of rectangle " + name + " is " + surface + ".");
+    Console.WriteLine("The circumference of rectangle " + name + " is " + circumference + ".");
+    Console.WriteLine("Rectangle " + name + " is " + (!isSquare?"not ":"")+ "a square.");
+}
+
 float circumference (float a, float b) {
     return 2 * (a + b);
 }
@@ -32,12 +39,5 @@ r2_edgeB = 9.25f;
 r2_surface = r2_edgeA * r2_edgeB;
 r2_isSquare = r2_edgeA == r2_edgeB;
 
-Console.WriteLine("The two edges of rectangle R1 are " + r1_edgeA + " and " + r1_edgeB + ".");
-Console.WriteLine("The surface of rectangle R1 is " + r1_surface + ".");
-Console.WriteLine("The circumference of rectangle R1 is " + circumference(r1_edgeA, r1_edgeB) + ".");
-Console.WriteLine("Rectangle R1 is " + (!r1_isSquare?"not ":"")+ "a square.");
-
-Console.WriteLine("The two edges of rectangle r2 are " + r2_edgeA + " and " + r2_edgeB + ".");
-Console.WriteLine("The surface of rectangle r2 is " + r2_surface + ".");
-Console.WriteLine("The circumference of rectangle r2 is " + circumference(r2_edgeA, r2_edgeB) + ".");
-Console.WriteLine("Rectangle r2 is " + (!r2_isSquare?"not ":"")+ "a square.");
+Output("R1", r1_edgeA, r1_edgeB, r1_surface, circumference(r1_edgeA,r1_edgeB), r1_isSquare);
+Output("R2", r2_edgeA, r2_edgeB, r2_surface, circumference(r2_edgeA,r2_edgeB), r2_isSquare);
